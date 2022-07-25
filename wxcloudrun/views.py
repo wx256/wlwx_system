@@ -18,16 +18,14 @@ def index(request, _):
     data = {
         "starttime": 987654321,
         "endtime": 987654321,
-        "msgid": 1 ,
+        "msgid": 1,
         "number": 10000
     }
 
-    result = requests.post('https://api.weixin.qq.com/customservice/msgrecord/getmsglist',data=data)
-
-
+    result = requests.post('https://api.weixin.qq.com/customservice/msgrecord/getmsglist', data=data)
 
     return HttpResponse(result)
-    return render(request, 'index.html')
+    return render(request, '  1index.html')
 
 
 def counter(request, _):
