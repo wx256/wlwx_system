@@ -1,0 +1,110 @@
+[2022-07-25 09:18:43,087] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 09:19:44,175] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 09:19:59,385] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:20:56,278] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:21:08,945] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:21:56,794] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 10137
+[2022-07-25 01:21:57,770] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 0}
+[2022-07-25 01:21:57,771] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /api/count HTTP/1.1" 200 22
+[2022-07-25 01:21:59,601] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-07-25 01:21:59,945] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 1}
+[2022-07-25 01:21:59,946] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-07-25 01:22:00,344] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-07-25 01:22:00,545] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-07-25 01:22:00,643] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 2}
+[2022-07-25 01:22:00,644] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-07-25 01:22:00,885] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 3}
+[2022-07-25 01:22:00,885] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-07-25 01:22:01,065] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-07-25 01:22:01,360] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 4}
+[2022-07-25 01:22:01,361] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-07-25 01:22:47,855] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- /opt/django/wlwx_system/wxcloudrun/views.py changed, reloading.
+[2022-07-25 01:22:48,414] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:22:50,714] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/django/wlwx_system/wxcloudrun/views.py", line 18, in index
+    return Response({"code": 0, "msg": "success"})
+NameError: name 'Response' is not defined
+[2022-07-25 01:22:50,714] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 62571
+[2022-07-25 01:22:50,896] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-07-25 01:22:50,896] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2233
+[2022-07-25 01:22:52,251] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/django/wlwx_system/wxcloudrun/views.py", line 18, in index
+    return Response({"code": 0, "msg": "success"})
+NameError: name 'Response' is not defined
+[2022-07-25 01:22:52,252] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 62571
+[2022-07-25 01:23:04,743] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- /opt/django/wlwx_system/wxcloudrun/views.py changed, reloading.
+[2022-07-25 01:23:05,297] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:23:08,405] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/django/wlwx_system/wxcloudrun/views.py", line 18, in index
+    return Response({"code": 0, "msg": "success"})
+NameError: name 'Response' is not defined
+[2022-07-25 01:23:08,405] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 62571
+[2022-07-25 01:23:09,471] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/django/wlwx_system/wxcloudrun/views.py", line 18, in index
+    return Response({"code": 0, "msg": "success"})
+NameError: name 'Response' is not defined
+[2022-07-25 01:23:09,472] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 62571
+[2022-07-25 01:23:29,637] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- /opt/django/wlwx_system/wxcloudrun/views.py changed, reloading.
+[2022-07-25 01:23:30,168] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:23:32,293] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+[2022-07-25 01:23:32,294] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 67097
+[2022-07-25 01:23:33,724] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+[2022-07-25 01:23:33,725] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 67097
+[2022-07-25 01:23:43,996] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- /opt/django/wlwx_system/wxcloudrun/views.py changed, reloading.
+[2022-07-25 01:23:44,628] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:23:47,545] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 7
+[2022-07-25 01:31:26,052] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- /opt/django/wlwx_system/wxcloudrun/views.py changed, reloading.
+[2022-07-25 01:31:26,585] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:31:28,775] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/django/wlwx_system/wxcloudrun/views.py", line 18, in index
+    result = requests.post('https://api.weixin.qq.com/customservice/msgrecord/getmsglist',data)
+UnboundLocalError: local variable 'data' referenced before assignment
+[2022-07-25 01:31:28,775] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 62790
+[2022-07-25 01:31:38,939] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- /opt/django/wlwx_system/wxcloudrun/views.py changed, reloading.
+[2022-07-25 01:31:39,513] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-07-25 01:31:41,558] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 81
